@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+    <head>
+        <!-- Metagegevens. -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Dennis Veldhuizen">
+        
+        <!-- Titel. -->
+        <title>Muziekschool H&amp;J | Contact</title>
+
+        <!-- jQuery UI-CSS. -->
+        <!-- Hieronder staat een link waar de zelfgekozen thema opnieuw gedownload kan worden:
+        https://jqueryui.com/themeroller/#!zThemeParams=5d00008000cd05000000000000003d8888d844329a8dfe02723de3e5701db9777083d4196cdbd4d1b23f4707dfcf44e72107af7b06ac47e5bf58d05f425fcf66d62e989588c4a9388b188614e0ac15b8af9fa4f7acfd390a3a7d402fe63f7d1c04d041a5cf16b8812d1ddfab09014c4718915c17161037c5ad18592e939279cbaf5cc5ebcd2a6c3bc158fa7d5c9ca1b852891145db0d6f7855a5db22f9d3104a86feb1012e4dcec25e5b354d723742db9cebb7b839855647af1ab90afc0fabd59bd56aaf334813d378b3358258588add56e8fabc69be2a6ff924c5bab8a9046f55360e6764c2d8ff11281ddd3805605f4c40565e56027d657c3a5bbc8a4cf02b2890410783d04f64edcaeeae435d2e9d05bea1df6f7e62f3cb8e572bd2096c404aa47c4c9c702894cba1718fca205c0737923405d35c3436c9c5fd3fe90f690656a2879c4374a1aef7973649063b902b10258ec1d81094b41673ba5813f85a7b5aa9d5907198b0c4bd2e9887e2b632b0ac88fb679346ad7bbd1471878ff06a99c499b9128f928961b641a9646eadd7a6f794591178e62c552c429ddd95ecc08db3ae631cc6cb5a4377cb96f164fef6db6f11. -->
+        <link rel="stylesheet" href="../css/jquery-ui.css">        
+
+        <!-- CSS-bestand. -->
+        <link rel="stylesheet" href="../css/stijl.css">
+        
+        <!-- jQuery-bibliotheek. -->
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.js"
+            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+            crossorigin="anonymous">
+        </script>
+
+        <!-- jQuery UI-JavaScript. -->
+        <script src="../js/jquery-ui.js"></script>
+
+        <!-- JS-bestand. -->
+        <script src="../js/contact.js"></script>
+    </head>
+
+    <body>
+        <!-- Header. -->
+        <header>
+            <section>
+                <h1>Muziekschool H&amp;J</h1>
+                <h4>Contact</h4>
+            </section>
+        </header>
+        
+        <!-- Container. -->
+        <main>
+            <!-- Navigatie. -->
+            <nav>
+                <!-- Buttongroep 1. -->
+                <div id="groep_1">
+                    <a href="../index.html">Home</a>
+                    <a href="overons.html">Over ons</a>
+                    <a href="tarieven.html">Tarieven</a>
+                    <a href="contact.html" class="actief">Contact</a>
+                    <a href="agenda.html">Agenda</a>
+                    <a href="motivatie.html">Motivatie</a>
+                    <a href="blog_overzicht.html">Blog</a>
+                </div>
+                
+                <!-- Lijn. -->
+                <div id="lijn"></div>
+            </nav>
+            
+            <!-- Inhoud onderverdeeld in twee kolommen. -->
+            <div id="inhoud">
+                <section id="kolom-links" class="col-03">
+                    <h3>Adresgegevens</h3>
+                    <p>
+                        Muziekschool H&amp;J<br>
+                        t.a.v Hannah en Jesse<br>
+                        Industrieterrein 37<br>
+                        5981 NK Panningen<br>
+                        0123-456789<br>
+                        muziekschoolhj@inlook.com
+                    </p>
+                    <div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2492.749795486853!2d5.976007815892346!3d51.334121731178634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c7485bd60bbd61%3A0x73a8c69eb69bad56!2sNHA%20Opleidingen!5e0!3m2!1snl!2snl!4v1673205123681!5m2!1snl!2snl"
+                            height="450"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </section>
+                
+                <section id="kolom-rechts" class="col-09">
+                    <h3>Contact</h3>
+                    <h5>U kunt een bericht achterlaten via onderstaand contactformulier</h5>
+                    
+                    <!-- De e-mail verzenden via www.formspree.io. -->
+                    <form id="contactformulier" action="https://formspree.io/f/mgejwvaq" method="post">
+                        <label for="voornaam">Uw voornaam</label><br>
+                        <input id="voornaam" type="text" name="Voornaam" placeholder="Uw voornaam"><br>
+                        
+                        <label for="achternaam">Uw achternaam</label><br>
+                        <input id="achternaam" type="text" name="Achternaam" placeholder="Uw achternaam"><br>
+                        
+                        <label for="emailadres">Uw e-mailadres</label><br>
+                        <input id="emailadres" type="email" name="E-mailadres" placeholder="Uw e-mailadres"><br>
+                        
+                        <label for="land">Land</label><br>
+                        <select id="land" name="Land">
+                            <option value="Nederland">Nederland</option>
+                            <option value="België">België</option>
+                            <option value="Anders">Anders</option>
+                        </select><br>
+                        
+                        <label for="bericht">Bericht</label><br>
+                        <textarea id="bericht" name="Bericht" rows="10" placeholder="Uw bericht hier"></textarea>
+                        
+                        <button type="submit" class="achtergrond_bruin tekst_wit">Verzend</button>
+                    </form>
+                </section>
+
+                <!-- De onderstaande div-elementen fungeren als een alert-functie. -->
+                <div id="dialoog"></div>
+            </div>
+        </main>
+        
+        <!-- Footer. -->
+        <footer>
+            <section>
+                <h5>
+                    &copy; Copyright 2021 Muziekschool H&amp;J<br>
+                    (Dit is een oefenopdracht, alle informatie op deze website is fictief.)
+                </h5>
+            </section>
+        </footer>
+    </body>
+</html>

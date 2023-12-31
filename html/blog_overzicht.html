@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+    <head>
+        <!-- Metagegevens. -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Dennis Veldhuizen">
+        
+        <!-- Titel. -->
+        <title>Muziekschool H&amp;J | Blog (Overzicht)</title>
+        
+        <!-- CSS-bestand. -->
+        <link rel="stylesheet" href="../css/stijl.css">
+        
+        <!-- jQuery-bibliotheek. -->
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.js"
+            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+            crossorigin="anonymous">
+        </script>
+        
+        <!-- JS-bestand. -->
+        <script src="../js/blog_overzicht.js"></script>
+    </head>
+    
+    <body>
+        <!-- Header. -->
+        <header>
+            <section>
+                <h1>Muziekschool H&amp;J</h1>
+                <h4>Blog (Overzicht)</h4>
+            </section>
+        </header>
+        
+        <!-- Container. -->
+        <main>
+            <!-- Navigatie. -->
+            <nav>
+                <!-- Buttongroep 1. -->
+                <div id="groep_1">
+                    <a href="../index.html">Home</a>
+                    <a href="overons.html">Over ons</a>
+                    <a href="tarieven.html">Tarieven</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="agenda.html">Agenda</a>
+                    <a href="motivatie.html">Motivatie</a>
+                    <a href="blog_overzicht.html" class="actief">Blog</a>
+                </div>
+                
+                <!-- Lijn. -->
+                <div id="lijn"></div>
+                
+                <!-- Buttongroep 2. -->
+                <div id="groep_2">
+                    <a href="blog_overzicht.html" class="actief">Overzicht</a>
+                    <a href="blog_beheer.html">Beheer</a>
+                    <a href="blog_database.html">Database</a>
+                </div>
+            </nav>
+            
+            <!-- Inhoud onderverdeeld in twee kolommen. -->
+            <div id="inhoud">
+                <section id="kolom-links" class="col-03">
+                    <h3>Blog (Overzicht)</h3>
+                    <figure>
+                        <img src="../img/blog.jpg" alt="blog">
+                    </figure>
+                    <p>
+                        Ontdek ons muzikale dagboek. Elk artikel is een uniek hoofdstuk in ons avontuur van het ontstaan van een melodie tot inspirerende momenten achter de schermen. Deel in onze passie en creativiteit en de betekenis achter de songs. Word deel van onze muzikale reis en beleef de magie van ontdekkingen
+                    </p>
+                </section>
+                
+                <section id="kolom-rechts" class="col-09">
+                    <h3>Muzikale dagboek</h3>
+                    <h5>
+                        Verrijk je ontdekkingstocht met onze betekenisvolle blogartikelen
+                    </h5>
+                    
+                    <!-- Hier wordt het bestand "blog.json" als html-inhoud ingeladen. -->
+                    <div id="blog_overzicht"></div>
+                </section>
+                
+                <!-- De laadpictogram wordt twee seconden getoond voordat de AJAX-oproep plaatsvindt. -->
+                <div id="laadpictogram">
+                    <img src="../img/laadpictogram.gif" alt="laadpictogram">
+                    <div>Bezig met ophalen van drie laatste blogartikelen...</div>
+                </div>
+            </div>
+        </main>
+        
+        <!-- Footer. -->
+        <footer>
+            <section>
+                <h5>
+                    &copy; Copyright 2021 Muziekschool H&amp;J<br>
+                    (Dit is een oefenopdracht, alle informatie op deze website is fictief.)
+                </h5>
+            </section>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+    <head>
+        <!-- Metagegevens. -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Dennis Veldhuizen">
+        
+        <!-- Titel. -->
+        <title>Muziekschool H&#38;J | Agenda</title>
+        
+        <!-- CSS-bestand. -->
+        <link rel="stylesheet" href="../css/stijl.css">
+        
+        <!-- jQuery-bibliotheek. -->
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.js"
+            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+            crossorigin="anonymous">
+        </script>
+        
+        <!-- JS-bestand. -->
+        <script src="../js/agenda.js"></script>
+    </head>
+
+    <body>
+        <!-- Header. -->
+        <header>
+            <section>
+                <h1>Muziekschool H&#38;J</h1>
+                <h4>Agenda</h4>
+            </section>
+        </header>
+        
+        <!-- Container. -->
+        <main>
+            <!-- Navigatie. -->
+            <nav>
+                <!-- Buttongroep 1. -->
+                <div id="groep_1">
+                    <a href="../index.html">Home</a>
+                    <a href="overons.html">Over ons</a>
+                    <a href="tarieven.html">Tarieven</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="agenda.html" class="actief">Agenda</a>
+                    <a href="motivatie.html">Motivatie</a>
+                    <a href="blog_overzicht.html">Blog</a>
+                </div>
+                
+                <!-- Lijn. -->
+                <div id="lijn"></div>
+            </nav>
+            
+            <!-- Inhoud onderverdeeld in twee kolommen. -->
+            <div id="inhoud">
+                <section id="kolom-links" class="col-03">
+                    <h3>Agenda</h3>
+                    <figure>
+                        <img src="../img/activiteit.jpeg" alt="activiteit">
+                    </figure>
+                    <p>
+                        Ervaar de harmonie van muziek bij Muziekschool H&J. Van gitaarakkoorden tot pianoklanken, de opzwepende ritmes van de djembé en de soulvolle tonen van de saxofoon en trompet. Onze deuren staan open voor alle leeftijden en niveaus. Doe mee, deel de vreugde en laten we samen een blijvende melodie creëren.
+                    </p>
+                </section>
+                
+                <section id="kolom-rechts" class="col-09">
+                    <h3>Activiteiten</h3>
+                    <h5>Ontdek onze komende muzikale avonturen</h5>
+                    <!-- Hier wordt de Django-agenda als html-inhoud ingeladen. -->
+                    <div id="agenda"></div>
+                </section>
+                
+                <!-- De laadpictogram wordt twee seconden getoond voordat de AJAX-oproep plaatsvindt. -->
+                <div id="laadpictogram">
+                    <img src="../img/laadpictogram.gif" alt="laadpictogram">
+                    <div>Bezig met ophalen van activiteiten...</div>
+                </div>
+            </div>
+        </main>
+        
+        <!-- Footer. -->
+        <footer>
+            <section>
+                <h5>
+                    &copy; Copyright 2021 Muziekschool H&#38;J<br>
+                    (Dit is een oefenopdracht, alle informatie op deze website is fictief.)
+                </h5>
+            </section>
+        </footer>
+    </body>
+</html>

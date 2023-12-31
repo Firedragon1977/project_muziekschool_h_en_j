@@ -1,0 +1,318 @@
+/* De veelgebruikte variabelen met namen bestaande uit kebabcase alvast klaarzetten. Op deze manier is het handig om de bepaalde kenmerken in één handomdraai aan te passen. */
+:root {
+    --hoogte: 200px;      /* Standaardhoogte voor de header en de helft daarvan voor de footer. */
+    --kleur-1: #e86c12; /* Oranjebruin nr. 1. */
+    --kleur-2: #b6510e; /* Oranjebruin nr. 2. */
+    --kleur-3: #f3b58a; /* Perzik. */
+    --kleur-4: #ffffff; /* Wit. */
+    --kleur-5: black;   /* Zwart. */
+    --kleur-6: #f7d505; /* Helder geel. */
+    --kleur-7: #e5eae5; /* Lichte grijs. */
+}
+
+/* De letterkleur. */
+a {color: var(--kleur-4);}
+
+a:hover, a.actief {
+    /* De achtergrondkleur instellen. */
+    background-color: var(--kleur-6);
+    /* De letterkleur instellen. */    
+    color: var(--kleur-5);
+}
+
+body {
+    /* Instellen als flexbox om de elementen binnen in het body-element te rangschikken naar wens. */
+    display: flex;
+    /* De elementen binnen in het body-element rangschikken als kolom. */
+    flex-direction: column;
+    /* De bepaalde lettertype instellen. De lettertypefamilie onder andere "sans-serif" wordt altijd erbij gezet. */
+    font-family: Tahoma, Verdana, sans-serif;
+    /* De standaardmarges resetten. */
+    margin: 0;
+    /* Het body-element minimaal 100% van de viewporthoogte (vh) instellen. */
+    min-height: 100vh;
+}
+
+button {
+    /* De achtergrondkleur instellen. */
+    background-color: var(--kleur-2);
+    /* De letterkleur instellen. */
+    color: var(--kleur-4);
+    /* De ruimte tussen de inhoud en de rand creëren. */
+    padding: 12px 20px;
+}
+
+button:hover {
+    /* De achtergrondkleur instellen. */
+    background-color: var(--kleur-1);
+    /* De cursor instellen als handpictogram. */
+    cursor: pointer;
+}
+
+button, input, select, textarea {
+    /* De hoeken van alle elementen verfraaien. */
+    border-radius: 5px;
+    /* De dikte van grenzen instellen. */
+    border-width: 1px;
+    /* De lettertypefamilie van ouderelement overnemen. */
+    font-family: inherit;
+    /* De grootte van lettertype van ouderelement overnemen. */
+    font-size: inherit; 
+}
+
+/* De hoogte van footer instellen. */
+footer {height: calc(var(--hoogte)/2);}
+
+/* De achtergrondkleur instellen. */
+footer, #groep_1 {background-color: var(--kleur-2);}
+
+footer, header {
+    /* Instellen als flexbox om de elementen binnen in het body-element te rangschikken naar wens. */
+    display: flex;
+    /* De inhoud verticaal centreren. */
+    justify-content: center;
+    /* De inhoud horizontaal centreren. */
+    align-items: center;
+    /* De tekst centreren. */
+    text-align: center;
+}
+
+/* De padding en de border meenemen in de totale breedte/hoogte van het element. */
+footer, header, main {box-sizing: border-box;}
+
+/* De breedte instellen ten opzichte van de breedte van ouderelement. */
+form, #kolom-links figure {width: 100%;}
+
+/* De inhoud van header gecentreerd houden. */
+h1 {margin-top: 0px;}
+
+/* De inhoud van header gecentreerd houden. */
+h4 {margin-bottom: 0px;}
+
+header {
+    /* De achtergrondkleur instellen. */
+    background-color: var(--kleur-1);
+    /* De letterkleur instellen. */
+    color: var(--kleur-4);
+    /* De hoogte instellen. */
+    height: var(--hoogte);
+}
+
+iframe {
+    /* De hoeken van alle a-elementen verfraaien. */
+    border-radius: 5px;
+    /* De breedte instellen ten opzichte van de breedte van ouderelement. */
+    width: 100%;
+}
+
+input, select, textarea {
+    /* De padding en de border meenemen in de totale breedte/hoogte van het element. */
+    box-sizing: border-box;
+    /* De ruimte tussen de grenzen van elementen verfraaien. */
+    margin: 5px 0px 10px;
+    /* De ruimte tussen de inhoud en de rand creëren. */
+    padding: 10px;
+    /* De breedte instellen ten opzichte van de breedte van ouderelement. */
+    width: 100%;
+}
+
+main {
+    /* Instellen als flexbox om de elementen binnen in het main-element te rangschikken naar wens. */
+    display: flex;
+    /* De elementen binnen in het main-element rangschikken als kolom. */
+    flex-direction: column;
+    /* Het main-element instellen dat het minimaal 100% van de viewporthoogte inneemt tussen footer- en header-element. */
+    flex: 1;
+}
+
+table {
+    /* De grenzen van de tabel gescheiden houden voor een nette uitstraling. */
+    border-collapse: separate;
+    /* De ruimte tussen de gescheiden grenzen instellen. */
+    border-spacing: 20px;
+}
+
+/* De afbeelding aan de linkerkant laten uitlijnen. */
+#afbeelding-links {float: left;}
+
+/* De afbeelding aan de rechterkant laten uitlijnen. */
+#afbeelding-rechts {float: right;}
+
+/* De tekst rechtsboven in elke cel van tabel met "agenda" als id uitlijnen. */
+#agenda td, #blog_database td, #blog_database th {
+    vertical-align: top;
+    text-align: left;
+}
+
+/* Het div-element met "agenda" of "blog_overzicht" als id mooi uitlijnen. */
+#agenda, #blog_overzicht, #blog_detail {margin-bottom: -20px;}
+
+#blog_database table, #blog_database th, #blog_database td {
+    /* De grenzen van tabel zichtbaar maken. */
+    border: 1px solid var(--kleur-5);
+    /* De grenzen van de tabel samenvoegen voor een nette uitstraling. */
+    border-collapse: collapse;
+}
+
+/* De achtergrond van even records instellen. */
+#blog_database th, #blog_database tr:nth-child(even) {background-color: var(--kleur-7);}
+
+/* De breedte van de kolom instellen. */
+#blog_database th:nth-child(1), #blog_database td:nth-child(1) {width: 25px;}
+
+/* De breedte van de kolom instellen. */
+#blog_database th:nth-child(2), #blog_database td:nth-child(2) {width: 75px;}
+
+/* De breedte van de kolom instellen. */
+#blog_database th:nth-child(4), #blog_database td:nth-child(4) {width: 100px;}
+
+/* De achtergrond van oneven records instellen. */
+#blog_database tr:nth-child(odd) {background-color: var(--kleur-4);}
+
+#groep_1 a, #groep_2 a {
+    /* De ruimte tussen de inhoud en de rand creëren. */
+    padding: 10px 20px;
+    /* De tekstdecoratie uitschakelen. */
+    text-decoration: none;
+}
+
+/* De achtergrondkleur instellen. */
+#groep_2 {background-color: var(--kleur-7);}
+
+/* De letterkleur. */
+#groep_2 a {color: var(--kleur-5);}
+
+/* De achtergrondkleur instellen. */
+#kolom-links {background-color: var(--kleur-3);}
+
+/* De ruimte tussen de inhoud en de rand creëren. */
+#kolom-links, #kolom-rechts {padding: 20px;}
+
+#kolom-links figure, #kolom-rechts figure {
+    /* De standaardmarges resetten. */
+    margin: 0px;
+    /* De tekst centreren. */
+    text-align: center;
+}
+
+#kolom-links figure img, #kolom-rechts figure img {
+    /* De hoeken van alle a-elementen verfraaien. */
+    border-radius: 5px;
+    /* De breedte instellen ten opzichte van de breedte van ouderelement. */
+    width: 90%;
+}
+
+/* De breedte instellen ten opzichte van de breedte van ouderelement. */
+#kolom-rechts figure {width: 40%;}
+
+/* De letterkleur instellen. */
+#kolom-rechts h3 {color: var(--kleur-2);}
+
+/* De letterkleur instellen. */
+#kolom-rechts #h3-zwart {color: var(--kleur-5);}
+
+#laadpictogram {
+    /* Vastzetten aan het scherm. */
+    position: fixed;
+    /* Verticaal plaatsen op 50% van het scherm. */
+    top: 50%;
+    /* Horizontaal plaatsen op 50% van het scherm. */
+    left: 50%;
+    /* Het middelpunt van de spinner in het midden van het scherm. */
+    transform: translate(-50%, -50%);
+    /* De inhoud centreren. */
+    text-align: center;
+}
+
+#lijn {
+    /* De hoogte van lijn instellen. */
+    height: 5px;
+    /* De achtergrondkleur instellen. */
+    background-color: var(--kleur-6);
+}
+
+/* Het div-element verfraaien. */
+.agenda, .blog_overzicht, .blog_detail, .motivatie {
+    /* De inhoud centreren */
+    margin: auto;
+    /* De onderkant van de inhoud verbreden. */
+    margin-bottom: 20px;
+    /* De hoeken van alle a-elementen verfraaien. */
+    border-radius:5px;
+    /* De achtergrondkleur instellen. */
+    background-color: var(--kleur-7);
+}
+
+/* De algemene CSS-eigenschappen speciaal voor alle a-elementen worden hieronder genegeerd. */
+.link, .link:hover {
+    /* De omliggende achtergrondkleur erven. */
+    background-color: inherit;
+    /* De omliggende letterkleur erven. */
+    color: inherit;
+    /* De tekstdecoratie uitschakelen. */
+    text-decoration: none;
+    /* De omliggende achtergrondkleur erven. */
+    text-align: inherit;
+}
+
+/* De onderstaande reeks mediaquery's is georganiseerd volgens het principe "from smallest (mobile) to biggest screen (monitor)". Elke mediaquery fungeert als standaard voor de volgende, tenzij de specifieke aanpassingen nodig zijn. */
+@media only screen and (min-width: 0px){
+    a {
+        /* De buttons onder elkaar rangschikken. */
+        display: block;
+        /* De tekst centreren. */
+        text-align: center;
+    }
+
+    /* De lettergrootte passend maken. */
+    h1 {font-size: 30px;}
+}
+
+/* Bij de schermgrootte groter dan 768px wordt de weergave opnieuw aangepast. */
+@media only screen and (min-width: 768px){
+    /* De buttons naast elkaar rangschikken. */
+    a {display: inline-block;}
+
+    /* De hoeken van alle a-elementen verfraaien. */
+    #groep_1 a.actief, #groep_1 a:hover {border-radius: 10px 10px 0px 0px;}
+    #groep_2 a.actief, #groep_2 a:hover {border-radius: 0px 0px 10px 10px;}
+    
+    /* De lettergrootte passend maken. */
+    h1 {font-size: 35px;}
+
+    #inhoud {
+        /* Instellen als flexbox om de elementen binnen in het body-element te rangschikken naar wens. */
+        display: flex;
+        /* Het div-element instellen dat het minimaal 100% van de hoogte inneemt van het main-element. */
+        flex: 1;
+    }
+
+    /* De breedte van een bepaald element in een aantal kolommen ten opzichte van het ouderelement (12 kolommen in totaal). */
+    .col-01 {width: calc((100%/12)*1)}
+    .col-02 {width: calc((100%/12)*2)}
+    .col-03 {width: calc((100%/12)*3)}
+    .col-04 {width: calc((100%/12)*4)}
+    .col-05 {width: calc((100%/12)*5)}
+    .col-06 {width: calc((100%/12)*6)}
+    .col-07 {width: calc((100%/12)*7)}
+    .col-08 {width: calc((100%/12)*8)}
+    .col-09 {width: calc((100%/12)*9)}
+    .col-10 {width: calc((100%/12)*10)}
+    .col-11 {width: calc((100%/12)*11)}
+    .col-12 {width: calc((100%/12)*12)}
+}
+
+/* Bij de schermgrootte groter dan 992px wordt de weergave opnieuw aangepast. */
+@media only screen and (min-width: 992px){
+    /* De lettergrootte passend maken. */
+    h1 {font-size: 40px;}
+}
+
+/* Bij de schermgrootte groter dan 1200px wordt de weergave opnieuw aangepast. */
+@media only screen and (min-width: 1200px){
+    /* De lettergrootte passend maken. */
+    h1 {font-size: 45px;}
+
+    /* De breedte van de afbeeldingen maximaal instellen. */
+    #kolom-links figure, #kolom-rechts figure { width: 300px;}
+}
