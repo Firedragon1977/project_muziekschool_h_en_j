@@ -13,7 +13,7 @@ $(document).ready(() => {
     // De AJAX-oproep uitvoeren met een vertraging van 2 seconden (2000 milliseconden). Dit siert ook de website.
     setTimeout(() => {
         $.ajax({
-            url: 'http://127.0.0.1:8000',
+            url: 'https://dennisveldhuizen.eu.pythonanywhere.com/',
             method: 'GET',
             dataType: 'html',
 
